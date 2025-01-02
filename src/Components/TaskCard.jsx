@@ -8,6 +8,7 @@ import toast from 'react-hot-toast';
 
 
 
+
 const TaskCard = (props) => {
   const{tasksList,setTaskslist}=useContext(taskContext)
   const[isModelopen,setIsmodelopen]=useState(false)
@@ -40,8 +41,12 @@ const TaskCard = (props) => {
     toast.success('Successfully deleted Task')
   }
 
+ 
   return (
-    <div  className='cards' ><p>{tName}</p>
+    <div  className='cards' 
+     
+     >
+      <p>{tName}</p>
     <div>
     <CiEdit className='icon-edit' onClick={onEditBtnClick}/>
     <MdOutlineDelete className='icon-del'onClick={onTaskDelete}/>

@@ -6,10 +6,12 @@ import { taskContext } from '../ContextAPI/Context'
 
 
 
+
 const TaskList = () => {
 
    const{tasksList}=useContext(taskContext)
 
+   
 
    // Filter function: filter according to status
    const todoList=tasksList.filter(item=>{
@@ -29,12 +31,19 @@ const TaskList = () => {
       return item
     }
    })
+   const clientList=tasksList.filter(item=>{
+    if(item.tStatus==="Waiting Client"){
+      return item
+    }
+   })
 
+  
  
   return (
     <div className='task-list-container'>
       <h2>Tasklists</h2>
       <div className='list-container' >
+        
         <div className='tdlist-container'>
         <h4 className='to-do-header'>To Do <span>{todoList.length}</span></h4>
         {(todoList.length !==0 && todoList[0].tNmame !=="")?todoList.map(eachEle=><TaskCard key={eachEle.id} eachEle={eachEle}/>):null}
@@ -47,6 +56,10 @@ const TaskList = () => {
         <div className='comlist-container'>
         <h4 className='complete-header'>Completed <span>{compltedList.length}</span></h4>
         {compltedList.map(eachEle=><TaskCard key={eachEle.id} eachEle={eachEle}/>)}
+        </div>
+        <div className='clentist-container'>
+        <h4 className='client-header'>Waiting Client <span>{clientList.length}</span></h4>
+        {clientList.map(eachEle=><TaskCard key={eachEle.id} eachEle={eachEle}/>)}
         </div>
       </div>
       

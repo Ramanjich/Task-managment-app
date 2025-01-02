@@ -25,16 +25,16 @@
 }
 .task-list-container .tdlist-container{
     
-    width: 31%;
+    width: 24%;
     padding: 2px;
 }
 .task-list-container .prolist-container{
     
-    width: 31%;
+    width: 24%;
     padding: 2px;
 }.task-list-container .comlist-container{
     
-    width: 31%;
+    width: 24%;
     padding: 2px;
 }
 @media screen and ( max-width:800px){
@@ -42,15 +42,18 @@
     
         width: 90%;
         padding: 2px;
+        margin-bottom: 20px;
     }
     .task-list-container .prolist-container{
         
         width: 90%;
         padding: 2px;
+        margin-bottom: 20px;
     }.task-list-container .comlist-container{
         
         width: 90%;
         padding: 2px;
+        margin-bottom: 20px;
     }
 }
 .task-list-container .to-do-header{
@@ -88,4 +91,12 @@ span{
     border-radius: 50%;
     color: black;
     padding: 5px;
+}
+.client-header{
+    background-color: tomato;
+    color: white;
+    font-weight: 200;
+    padding:10px 35px 10px 2px ;
+    font-size: 20px;
+    border-radius: 2px;
 }

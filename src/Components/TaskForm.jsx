@@ -22,6 +22,7 @@ const TaskForm = () => {
 
     setTaskslist([...tasksList,{...taskObj,taskId:uuidv4()}])
     setTaskobj({tName:"",tStatus:"To Do"})
+    
     toast.success('Successfully Created Task')
   }
   
@@ -43,6 +44,7 @@ const TaskForm = () => {
         <option value="To Do" selected>To Do</option>
         <option value="In Progress">In Progress</option>
         <option value="Completed">Completed</option>
+        <option value="Waiting Client">Waiting Client</option>
         
       </select>
       <button type="submit"className='create-btn'>Create</button>

@@ -72,7 +72,7 @@ const EditForm = (props) => {
         <option value="To Do" >To Do</option>
         <option value="In Progress">In Progress</option>
         <option value="Completed">Completed</option>
-        
+        <option value="Waiting Client">Waiting Client</option>
       </select>
       <div className='edit-btn-container'>
       
