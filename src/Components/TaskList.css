@@ -1,0 +1,91 @@
+.task-list-container{
+    width: 70%;
+    
+}
+.task-list-container h2{
+    color:#5F9EA0;
+    margin-left: 8px;
+    
+}
+.task-list-container .list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+@media screen and ( max-width:800px){
+    .task-list-container .list-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 100px;
+        padding: 10px;
+    }
+}
+.task-list-container .tdlist-container{
+    
+    width: 31%;
+    padding: 2px;
+}
+.task-list-container .prolist-container{
+    
+    width: 31%;
+    padding: 2px;
+}.task-list-container .comlist-container{
+    
+    width: 31%;
+    padding: 2px;
+}
+@media screen and ( max-width:800px){
+    .task-list-container .tdlist-container{
+    
+        width: 90%;
+        padding: 2px;
+    }
+    .task-list-container .prolist-container{
+        
+        width: 90%;
+        padding: 2px;
+    }.task-list-container .comlist-container{
+        
+        width: 90%;
+        padding: 2px;
+    }
+}
+.task-list-container .to-do-header{
+    background-color: #404040
+    ;
+    color: white;
+    font-weight: 200;
+    padding:10px 35px 10px 2px ;
+    font-size: 20px;
+    border-radius: 2px;
+    
+}
+.task-list-container .progress-header{
+    background-color:#140114 ;
+    color: white;
+    font-weight: 200;
+    padding:10px 35px 10px 2px ;
+    font-size: 20px;
+    border-radius: 2px;
+    
+}
+.task-list-container .complete-header{
+    background-color:#26734d;
+    color: white;
+    font-weight: 200;
+    padding:10px 35px 10px 2px ;
+    font-size: 20px;
+    border: none;
+    
+    
+    
+}
+span{
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    padding: 5px;
+}
