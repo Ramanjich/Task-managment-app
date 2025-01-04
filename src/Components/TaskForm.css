@@ -1,18 +1,19 @@
 .task-form-container{
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
-    
-    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 50px 25px;
     
 }
+
 @media screen and ( max-width:600px){
   .task-form-container{
     width: 70%;
     
   }
 }
-.task-form-container input{
+.task-form-container .input-ele{
     width: 100%;
     margin-bottom: 15px;
     padding: 12px 16px;
@@ -24,16 +25,19 @@
     border-radius: 8px;
     outline: none;
     
+    
 }
-.task-form-container label{
+.task-form-container .label-style{
     font-size: 20px;
     font-weight: 300;
     
   color: #0a0909;
 }
-.task-form-container select{
+.dark-label{
+  color:#B0B0B0;
+}
+.task-form-container .select-ele{
     width: 100%;
-    
     padding: 12px 16px;
     font-size: 16px;
     font-family: 'Arial', sans-serif;
@@ -55,4 +59,46 @@
   cursor: pointer; 
   margin-top: 15px;
    
+}
+
+
+/* dark-mode-style */
+.dark-form{
+  background-color: #1e1e1e;
+  border-radius: 1px solid #333;
+  border-radius: 8px;
+  padding: 50px 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.dark-input{
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  outline: none;
+  background-color:#2e2e2e ;
+  color:#e0e0e0;
+  border: 1px solid #444;
+  border-radius: 4px;
+  
+  
+}
+
+.dark-select{
+  width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+  outline: none;
+  background-color: #2a2a2a;
+  color:#e0e0e0;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px;
+  
+}
+.dark-button{
+  background-color: #6200ea;
+  transition: background-color 0.3s;
 }

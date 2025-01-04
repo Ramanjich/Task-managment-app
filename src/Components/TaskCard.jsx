@@ -10,7 +10,7 @@ import toast from 'react-hot-toast';
 
 
 const TaskCard = (props) => {
-  const{tasksList,setTaskslist}=useContext(taskContext)
+  const{tasksList,setTaskslist,darkMode}=useContext(taskContext)
   const[isModelopen,setIsmodelopen]=useState(false)
   const[sendToEdit,setSendtoedit]=useState("")
 
@@ -43,12 +43,13 @@ const TaskCard = (props) => {
 
  
   return (
-    <div  className='cards' 
-     
+    <div  className={darkMode?'dark-cards':'cards'} 
+     draggable 
+     onDragStart={(e)=>{e.dataTransfer.setData("id",taskId)}}
      >
-      <p>{tName}</p>
+      <p style={{color:darkMode?'white':''}}>{tName}</p>
     <div>
-    <CiEdit className='icon-edit' onClick={onEditBtnClick}/>
+    <CiEdit className={darkMode?"dark-icon-edit":"icon-edit"} onClick={onEditBtnClick}/>
     <MdOutlineDelete className='icon-del'onClick={onTaskDelete}/>
     {isModelopen && <EditForm isModelopen={isModelopen} setIsmodelopen={setIsmodelopen}sendToEdit={sendToEdit}/>}
     </div>

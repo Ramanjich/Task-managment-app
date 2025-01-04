@@ -4,6 +4,7 @@
     align-items: center;
     padding: 20px;
     font-family: Roboto;
+    
 }
 .edit-form-container{
     display: flex;
@@ -18,7 +19,7 @@
     
   color: #0a0909;
 }
-.edit-form-container input{
+.edit-form-container input-ele-edit{
     width: 100%;
     margin-bottom: 15px;
     padding: 12px 16px;
@@ -30,7 +31,7 @@
     border-radius: 8px;
     outline: none;
 }
-.edit-form-container select{
+.edit-form-container .edit-select-element{
     width: 100%;
     margin-bottom: 15px;
     padding: 12px 16px;
@@ -67,4 +68,32 @@
 .edit-form-container .edit-btn-container{
     display: flex;
     justify-content: space-evenly;
+}
+
+.dark-select-ele{
+    background-color: #2a2a2a;
+    color:#e0e0e0;
+    border: 1px solid #444;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    
+    
+    outline: none;
+}
+.dark-edit-input-ele{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    
+    outline: none;
+    background-color:#2e2e2e ;
+  color:#e0e0e0;
+  border: 1px solid #444;
+  border-radius: 4px;
 }

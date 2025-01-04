@@ -1,102 +1,58 @@
 .task-list-container{
-    width: 70%;
+    width: 100%;
     
 }
 .task-list-container h2{
     color:#5F9EA0;
     margin-left: 8px;
+    margin-bottom: 10px;
     
 }
 .task-list-container .list-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    
+}
+
+.min-container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    padding-top: 20px;
+    
+    min-height: 300px;
+    border-radius: 5px;
+    
 }
-@media screen and ( max-width:800px){
+@media screen and ( max-width:768px){
     .task-list-container .list-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        min-height: 100px;
-        padding: 10px;
+        grid-template-columns: repeat(2,1fr);
     }
 }
-.task-list-container .tdlist-container{
-    
-    width: 24%;
-    padding: 2px;
-}
-.task-list-container .prolist-container{
-    
-    width: 24%;
-    padding: 2px;
-}.task-list-container .comlist-container{
-    
-    width: 24%;
-    padding: 2px;
-}
-@media screen and ( max-width:800px){
-    .task-list-container .tdlist-container{
-    
-        width: 90%;
-        padding: 2px;
-        margin-bottom: 20px;
-    }
-    .task-list-container .prolist-container{
-        
-        width: 90%;
-        padding: 2px;
-        margin-bottom: 20px;
-    }.task-list-container .comlist-container{
-        
-        width: 90%;
-        padding: 2px;
-        margin-bottom: 20px;
+@media screen and ( max-width:480px){
+    .task-list-container .list-container{
+        grid-template-columns: repeat(1,1fr);
     }
 }
-.task-list-container .to-do-header{
-    background-color: #404040
-    ;
-    color: white;
-    font-weight: 200;
-    padding:10px 35px 10px 2px ;
-    font-size: 20px;
-    border-radius: 2px;
-    
-}
-.task-list-container .progress-header{
-    background-color:#140114 ;
-    color: white;
-    font-weight: 200;
-    padding:10px 35px 10px 2px ;
-    font-size: 20px;
-    border-radius: 2px;
-    
-}
-.task-list-container .complete-header{
-    background-color:#26734d;
-    color: white;
-    font-weight: 200;
-    padding:10px 35px 10px 2px ;
-    font-size: 20px;
-    border: none;
-    
-    
-    
-}
-span{
+
+.task-list-container .list-container .min-container span{
     background-color: white;
     border-radius: 50%;
     color: black;
     padding: 5px;
 }
-.client-header{
-    background-color: tomato;
-    color: white;
-    font-weight: 200;
-    padding:10px 35px 10px 2px ;
-    font-size: 20px;
-    border-radius: 2px;
+.task-list-container .list-container .min-container h3{
+    color: rgb(68, 68, 144);
+}
+.dark-min-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#2a2a2a;
+    padding-top: 20px;
+    border: 1px solid #444;
+    min-height: 300px;
+    border-radius: 5px;
 }

@@ -3,13 +3,38 @@
     flex-direction: column;
     align-items: center;
     background-color:#F4F6FF;
-    height: 100vh;
+    padding-bottom: 30px;
     font-family: 'Arial', sans-serif;
     gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.app-container nav{
+    display: flex;
+    
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.app-container h1{
+      color: rgb(68, 68, 144);
 }
 @media screen and ( max-width:600px){
     .app-container h1{
         font-size: 18px;
 
     }
+}
+.dark-mode{
+    background-color: #121212;
+}
+.dark-circle{
+    cursor: pointer;
+    font-size: 1.6em;
+}
+.dark-mode-circle{
+    color: #fff;
+    font-size: 1.6em;
+    cursor: pointer;
 }
