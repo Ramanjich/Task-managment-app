@@ -23,7 +23,7 @@ const App = () => {
     <div className={`app-container ${darkMode?"dark-mode":""}`}>
       <taskContext.Provider value={{tasksList,setTaskslist,darkMode,setDarkmode}}>
       <nav>
-      <h1>Task Managment App </h1>
+      <h1>TaskTrek </h1>
       <CiDark onClick={()=>setDarkmode(prev=>!prev)} className={darkMode?"dark-mode-circle":"dark-circle"}/>
       </nav>
      

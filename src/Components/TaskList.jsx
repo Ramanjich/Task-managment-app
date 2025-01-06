@@ -61,7 +61,7 @@ const TaskList = () => {
  
   return (
     <div className='task-list-container'>
-      <h2>Tasklists</h2>
+      <h2>Taskslist</h2>
       <div className='list-container' >
         {EachColumn.map(col=>(
           <div onDrop={(e)=>handleDrop(e,col.status)} onDragOver={(e)=>{e.preventDefault()}}>
