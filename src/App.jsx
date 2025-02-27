@@ -4,6 +4,7 @@ import TaskList from './Components/TaskList'
 import {taskContext} from './ContextAPI/Context'
 import toast, { Toaster } from 'react-hot-toast';
 import { CiDark } from "react-icons/ci";
+import axios from 'axios'
 
 import './App.css'
 const localStTaskList=localStorage.getItem("ListItem")
@@ -15,7 +16,14 @@ const App = () => {
   //localstorage
   useEffect(()=>{
     localStorage.setItem("ListItem",JSON.stringify(tasksList))
+    getTasks()
+
   },[tasksList])
+
+  const getTasks=async()=>{
+    const resultData=await axios.get("http://localhost:5000/tasks")
+    console.log(resultData.data)
+  }
 
 
   return (
